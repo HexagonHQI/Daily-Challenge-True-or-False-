@@ -1,0 +1,22 @@
+<!-- Instructions -->
+<!-- Create a function that returns true if all parameters are truthy, and false otherwise. -->
+
+<!-- Examples -->
+<!-- allTruthy(true, true, true) ➞ true -->
+
+<!-- allTruthy(true, false, true) ➞ false -->
+
+<!-- allTruthy(5, 4, 3, 2, 1, 0) ➞ false -->
+
+
+def allTruthy(*args):
+    """
+    Returns True if all arguments are truthy, False otherwise.
+    """
+    return all(arg for arg in args)
+
+
+
+    print(allTruthy(True, True, True))  # True
+print(allTruthy(True, False, True))  # False
+print(allTruthy(5, 4, 3, 2, 1, 0))  # False
